@@ -55,7 +55,7 @@ def extract_features(mail_dir):
     
 # Create a dictionary of words with its frequency
 
-train_dir = 'lingspam_public\\train-mails'
+train_dir = 'lingspam_public/train-mails'
 dictionary = make_Dictionary(train_dir)
 
 # Prepare feature vectors per training mail and its labels
