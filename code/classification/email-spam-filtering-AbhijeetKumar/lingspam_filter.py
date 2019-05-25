@@ -68,8 +68,7 @@ train_labels = [fi.startswith('spm') for fi in os.listdir(train_dir)]
 
 # Training SVM and Naive bayes classifier and its variants
 
-model1 = LinearSVC(max_iter=1000000)
-print(model1.get_params()['max_iter'])
+model1 = LinearSVC()#(max_iter=1000000)
 model2 = MultinomialNB()
 
 model1.fit(train_matrix,train_labels)
