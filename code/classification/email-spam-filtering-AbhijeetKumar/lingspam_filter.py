@@ -66,7 +66,7 @@ train_matrix = extract_features(train_dir)
 
 # Training SVM and Naive bayes classifier and its variants
 
-model1 = LinearSVC()
+model1 = LinearSVC(max_iter=100000)
 model2 = MultinomialNB()
 
 model1.fit(train_matrix,train_labels)
