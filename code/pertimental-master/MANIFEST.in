@@ -1,6 +1,0 @@
-#Model
-include pertimental/Model.pkl
-
-#Misc
-include LICENSE.txt
-include README.rst
